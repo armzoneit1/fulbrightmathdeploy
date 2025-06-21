@@ -1,4 +1,7 @@
 {
   "schemaVersion": 2,
-  "templateId": "static-site"
+  "dockerfileLines": [
+    "FROM nginx:alpine",
+    "COPY . /usr/share/nginx/html"
+  ]
 }
